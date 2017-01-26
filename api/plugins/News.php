@@ -1,6 +1,6 @@
 <?php
 class News {    
-	public function latest($page, $country)
+	public static function latest($page, $country)
 	{
 		$ts = time() - 3600;
 		$response = get_news("https://webhose.io/search?token=ab16221e-3af1-4db0-81fa-e8a943b39ac6&format=json&q=language%3A(english)%20thread.country%3AGH%20(site_type%3Anews)&ts=$ts");
